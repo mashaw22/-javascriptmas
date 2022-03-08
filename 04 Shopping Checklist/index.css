@@ -1,0 +1,106 @@
+:root {
+  --wine-red: #C7375F;
+  --bright-red: #D42D2F;
+  --dark-green: #344D2F;
+  --light-green: #77A047;
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #244C60;
+    /* Maybe change the background-color to red...What other colors could you use? */
+    background-color: #B8CDD8;
+}
+
+.checklist {
+    color: #384640;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    flex-direction: column;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 5ch;
+    background: #EFF4F0;
+    padding: 1em 2em;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.checklist-item {
+    margin: 0.5em;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  background: #E1E1E1;
+  height: 16px;
+  width: 16px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+input[type="checkbox"]:hover {
+  filter: brightness(90%);
+}
+
+input[type=checkbox]:checked + label.strikethrough{
+  text-decoration: line-through;
+  font-weight: normal;
+  color: #C4C1C1
+}
+
+#input {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #EFF4F0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    color: #EFF4F0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+#add-btn {
+    background-color: #244C60;
+}
+
+#add-btn:hover {
+    background-color: #5489A4;
+}
+
+#delete-btn {
+    background-color: #970C10;
+}
+
+#delete-btn:hover {
+    background-color: #BC282C;
+}
